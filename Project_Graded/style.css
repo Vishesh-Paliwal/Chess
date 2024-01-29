@@ -1,0 +1,132 @@
+body{
+    background-image: url(https://wallpapers.com/images/featured/chess-rxs9nof9n7okzx4c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-y: hidden;
+}
+#gameboard{
+    margin-top: 8%;
+    margin-left: 30%;
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square svg {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    position: relative;
+    z-index: -10;
+} 
+
+path {
+    position: relative;
+    z-index: -12;
+}
+
+.peice{
+    position: relative;
+    z-index: 10;
+}
+
+.square{
+    height:  80px;
+    width:  80px; 
+    position: relative;
+}
+
+.black {
+    background-color: rgb(110,110,98);
+}
+
+.white {
+    background-color: rgb(243, 196, 68);
+}
+
+.blackF{
+    fill: black;
+}
+
+.whiteF{
+    fill: white;
+}
+
+p{
+    height: 100px;
+    width: 300px;
+    border-radius: 40px 20px;
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 70px;
+    margin-left: 30px;
+    font-size: 2.5rem;
+    transform: translateY(-400px);
+    box-shadow: inset 5px 3px cadetblue;
+}
+
+span{
+    color: rgb(23, 148, 106);
+    font-weight: bolder;
+}
+
+.show{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(https://wallpapers.com/images/featured/chess-rxs9nof9n7okzx4c.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow-y: hidden;
+        height: 100vh;
+        display: flex;
+        width: 100vw;
+        align-items: center;
+    }
+    /* #page1{
+        background-image: url(https://wallpapers.com/images/featured/chess-rxs9nof9n7okzx4c.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow-y: hidden;
+    } */
+
+    #gameboard {
+        margin-top: 5%;
+        margin-left: 5%;
+       height: 320px;
+       width: 320px;
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .square svg {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+        position: relative;
+        z-index: -10;
+    }
+
+    .square {
+        height: 40px;
+        width: 40px;
+        position: relative;
+    }
+
+    p {
+        width: 70%;
+        height: 5%;
+        margin: 10px;
+        margin-bottom: 30px;
+        margin-left: 5%;
+        font-size: 1rem;
+        transform: translateY(10px);
+    }
+}
